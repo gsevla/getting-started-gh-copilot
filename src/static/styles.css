@@ -156,14 +156,27 @@ footer {
 }
 
 .participants-list {
-  list-style-position: inside;
-  padding-left: 10px;
+  list-style: none;
+  padding-left: 0;
 }
 
 .participants-list li {
-  color: #666;
-  font-size: 0.9em;
-  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 0;
+}
+
+.delete-participant {
+  cursor: pointer;
+  color: #c62828;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  padding: 4px;
+}
+
+.delete-participant:hover {
+  opacity: 1;
 }
 
 .no-participants {
